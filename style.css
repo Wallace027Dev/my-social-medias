@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* === Variáveis de Estilo === */
+:root {
+  --font-family: "Poppins", sans-serif;
+  --background-dark: #141414;
+  --background-light: #1f1f1f;
+  --text-light: #e7e7e7;
+  --text-highlight: #c4df72;
+  --link-background: #333333;
+  --link-hover: #444444;
+  --spacing: 8px;
+  --border-radius: 16px;
+}
+
+/* === Reset e Estilos Gerais === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: var(--spacing);
+}
+
+/* === Estrutura Principal === */
+main {
+  background-color: var(--background-light);
+  padding: calc(var(--spacing) * 3);
+  border-radius: var(--border-radius);
+  min-width: 320px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* === Estilos de Imagem === */
+img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+/* === Tipografia === */
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing);
+}
+
+h2 {
+  font-size: 0.9rem;
+  color: var(--text-highlight);
+}
+
+p {
+  font-size: 0.8rem;
+  margin: calc(var(--spacing) * 2) 0;
+}
+
+/* === Lista e Links === */
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  /* Remova o estilo padrão do li, caso necessário */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-light);
+  border-radius: var(--spacing);
+  background-color: var(--link-background);
+  padding: calc(var(--spacing) * 1.25) 0;
+  transition: background-color 0.3s ease;
+}
+@media (min-width:769px) {
+  a:hover {
+    background-color: var(--link-hover);
+  }
+}
+
+/* === Responsividade === */
+@media (max-width: 480px) {
+  html {
+    background-color: var(--background-light);
+  }
+
+  main {
+    min-width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
