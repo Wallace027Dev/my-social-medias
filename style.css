@@ -39,30 +39,31 @@ main {
   background-color: var(--background-light);
   padding: calc(var(--spacing) * 3);
   border-radius: var(--border-radius);
-  min-width: 320px;
+  width: 90%;
+  max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* === Estilos de Imagem === */
 img {
   border-radius: 50%;
-  width: 80px;
+  width: clamp(60px, 15vw, 120px);
   margin-bottom: calc(var(--spacing) * 2);
 }
 
 /* === Tipografia === */
 h1 {
-  font-size: 1.4rem;
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
   margin-bottom: var(--spacing);
 }
 
 h2 {
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 2.5vw, 1.5rem);
   color: var(--text-highlight);
 }
 
 p {
-  font-size: 0.8rem;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   margin: calc(var(--spacing) * 2) 0;
 }
 
@@ -90,6 +91,7 @@ a {
   padding: calc(var(--spacing) * 1.25) 0;
   transition: background-color 0.3s ease;
 }
+
 @media (min-width:769px) {
   a:hover {
     background-color: var(--link-hover);
@@ -106,17 +108,5 @@ a {
     min-width: 100%;
     border-radius: 0;
     box-shadow: none;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-  }
-
-  h2 {
-    font-size: 0.8rem;
-  }
-
-  p {
-    font-size: 0.7rem;
   }
 }
