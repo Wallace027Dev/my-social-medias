@@ -1,7 +1,8 @@
-
 # Projeto: Minhas Redes Sociais
 
 Este é um projeto simples de uma página HTML que exibe as redes sociais de um desenvolvedor, com foco em responsividade, design minimalista e acessibilidade.
+
+![preview](./assets/preview.png)
 
 ---
 
@@ -26,10 +27,13 @@ Este é um projeto simples de uma página HTML que exibe as redes sociais de um 
 
 ```
 projeto/
-├── index.html   # Arquivo principal da página
-├── style.css    # Arquivo de estilos
-├── assets/      # Pasta para imagens
-    └── minha-foto.jpg
+   ├── index.html            # Arquivo principal da página
+   ├── assets/               # Pasta para imagens
+   ├── style.css             # Arquivo de estilos
+   ├── images/               # Pasta para imagens
+      ├── minha-foto.jpg
+      ├── logo-wallace.svg
+      └── preview.png
 ```
 
 ---
@@ -38,7 +42,7 @@ projeto/
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/minhas-redes-sociais.git
+   git clone https://github.com/Wallace027Dev/minhas-redes-sociais.git
    ```
 
 2. Acesse o diretório do projeto:
@@ -48,8 +52,8 @@ projeto/
 
 3. Abra o arquivo `index.html` no navegador:
    ```bash
-   open index.html # Para macOS
    start index.html # Para Windows
+   open index.html  # Para macOS
    ```
 
 ---
